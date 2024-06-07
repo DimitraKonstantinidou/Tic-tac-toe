@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(122, 213, 183);
+}
+
+select {
+    cursor: pointer
+}
+
+.container {
+    width: 500px; 
+    margin: auto; 
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    font-size: 2rem;
+  }
+  
+  .box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(14, 152, 106);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+
+
+.winning-box {
+    content: '✓';
+    position: absolute;
+    color: green;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button{
+  display: none;
+  padding: 5px;
+  margin: 10px;
+  background-color: rgb(122, 213, 183);
+  border-radius: 5%;
+  border: 3px solid rgb(14, 152, 106);
+  cursor: pointer;
+}
